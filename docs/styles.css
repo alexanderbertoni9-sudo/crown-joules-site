@@ -395,12 +395,8 @@ p{ margin:0; line-height:1.65; }
   box-shadow: var(--shadow);
 }
 
-/* ---------------- TEAM (SPECIAL RULES) ----------------
-   We use a 4-column grid and let JS set the spans per row:
-   1 person in a row => span 4
-   2 people => span 2 + span 2
-   3 people => span 1 + span 1 + span 2
-   4 people => span 1 each
+/* ---------------- TEAM ----------------
+   4-column grid that wraps automatically.
 */
 .team-grid{
   display:grid;
@@ -417,6 +413,12 @@ p{ margin:0; line-height:1.65; }
   transition: transform 220ms var(--ease);
 }
 .team-card:hover{ transform: translateY(-2px); }
+.team-grade{
+  margin: 4px 0 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+  font-weight: 650;
+}
 
 .avatar{
   width: 72px;
