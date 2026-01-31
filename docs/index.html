@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crown Joules Robotics</title>
+  <meta name="description" content="Crown Joules Robotics Team — building, learning, competing." />
+
+  <!-- Favicon (same image as logo) -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top glow background -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="Crown Joules Home">
+        <span class="brand-mark">
+          <img class="brand-logo" src="assets/logo.png" alt="Crown Joules logo">
+        </span>
+        <span class="brand-name">Crown Joules</span>
+      </a>
+
+      <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span class="burger"></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#robot">Our Robot</a>
+        <a href="#team">Team</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#sponsors">Sponsors</a>
+        <a class="cta" href="#contact">Contact</a>
+
+        <button class="toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="toggle-dot" aria-hidden="true"></span>
+          <span class="toggle-text">Dark</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / HOME -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left reveal">
+          <p class="pill">Robotics • Engineering • Competition</p>
+          <h1 class="title">
+            Building the future,
+            <span class="title-accent">one match at a time.</span>
+          </h1>
+          <p class="subtitle">
+            We’re <strong>Crown Joules</strong>, a student robotics team focused on design, coding,
+            and teamwork. This site is a clean home base for our season updates, projects, and sponsors.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#robot">See our robot</a>
+            <a class="btn" href="#sponsors">Sponsor us</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-num">20+</div>
+              <div class="stat-label">Team Members</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">6+</div>
+              <div class="stat-label">Build Weeks</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Iterations</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="card">
+            <div class="card-header">
+              <h3>Season Highlight</h3>
+              <p class="muted">Drop a photo/video later — placeholder for now.</p>
+            </div>
+
+            <div class="media placeholder">
+              <span>Hero Image / Video Placeholder</span>
+            </div>
+
+            <div class="card-footer">
+              <div class="chip">CAD</div>
+              <div class="chip">Java / JS</div>
+              <div class="chip">Controls</div>
+              <div class="chip">Drivebase</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>About Crown Joules</h2>
+          <p class="muted">
+            Replace this with your team’s official description: your mission, values, and what you compete in.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="info-card reveal">
+            <h3>What We Do</h3>
+            <p>
+              We design, build, and program robots, then compete in events that test performance, strategy,
+              and teamwork.
+            </p>
+          </article>
+
+          <article class="info-card reveal">
+            <h3>How We Work</h3>
+            <p>
+              Mechanical, programming, and outreach squads collaborate through prototypes, testing, and constant iteration.
+            </p>
+          </article>
+
+          <article class="info-card reveal">
+            <h3>Why It Matters</h3>
+            <p>
+              Robotics teaches real engineering: problem-solving, communication, deadlines, leadership, and resilience.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGINEERING PORTFOLIO (Carousel) -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Engineering Portfolio</h2>
+          <p class="muted">
+            Add your build photos, CAD screenshots, wiring diagrams, awards, and match recaps.
+            (Replace the image files later.)
+          </p>
+        </div>
+
+        <div class="carousel reveal" data-carousel>
+          <div class="carousel-top">
+            <div class="carousel-title">
+              <h3>Highlights</h3>
+              <p class="muted">Swipe or use arrows • Autoplays</p>
+            </div>
+
+            <div class="carousel-actions">
+              <button class="car-btn" type="button" data-prev aria-label="Previous slide">‹</button>
+              <button class="car-btn" type="button" data-next aria-label="Next slide">›</button>
+            </div>
+          </div>
+
+          <div class="carousel-viewport" data-viewport>
+            <div class="carousel-track" data-track>
+              <!-- Slide 1 -->
+              <article class="slide">
+                <div class="slide-media">
+                  <img src="assets/portfolio/slide1.jpg" alt="Portfolio slide 1"
+                       onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                  <div class="slide-fallback placeholder" style="display:none;">
+                    <span>assets/portfolio/slide1.jpg</span>
+                  </div>
+                </div>
+                <div class="slide-caption">
+                  <h4>CAD + Prototyping</h4>
+                  <p class="muted">Show early prototypes, iteration notes, and what changed.</p>
+                </div>
+              </article>
+
+              <!-- Slide 2 -->
+              <article class="slide">
+                <div class="slide-media">
+                  <img src="assets/portfolio/slide2.jpg" alt="Portfolio slide 2"
+                       onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                  <div class="slide-fallback placeholder" style="display:none;">
+                    <span>assets/portfolio/slide2.jpg</span>
+                  </div>
+                </div>
+                <div class="slide-caption">
+                  <h4>Wiring + Electrical</h4>
+                  <p class="muted">Clean wiring, labels, safety checks, and power layout.</p>
+                </div>
+              </article>
+
+              <!-- Slide 3 -->
+              <article class="slide">
+                <div class="slide-media">
+                  <img src="assets/portfolio/slide3.jpg" alt="Portfolio slide 3"
+                       onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                  <div class="slide-fallback placeholder" style="display:none;">
+                    <span>assets/portfolio/slide3.jpg</span>
+                  </div>
+                </div>
+                <div class="slide-caption">
+                  <h4>Autonomous + Testing</h4>
+                  <p class="muted">Add screenshots of paths, tuning, and test results.</p>
+                </div>
+              </article>
+
+              <!-- Slide 4 -->
+              <article class="slide">
+                <div class="slide-media">
+                  <img src="assets/portfolio/slide4.jpg" alt="Portfolio slide 4"
+                       onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                  <div class="slide-fallback placeholder" style="display:none;">
+                    <span>assets/portfolio/slide4.jpg</span>
+                  </div>
+                </div>
+                <div class="slide-caption">
+                  <h4>Competition</h4>
+                  <p class="muted">Match photos, pit setup, awards, and event highlights.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="carousel-dots" data-dots aria-label="Slide navigation"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROBOT -->
+    <section class="section" id="robot">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Our Robot</h2>
+          <p class="muted">Add specs, features, and a short “how it works” breakdown.</p>
+        </div>
+
+        <div class="robot-grid">
+          <div class="robot-media reveal">
+            <div class="media placeholder tall">
+              <span>Robot Image Placeholder</span>
+            </div>
+          </div>
+
+          <div class="robot-details reveal">
+            <div class="specs">
+              <div class="spec">
+                <span class="spec-k">Drive</span>
+                <span class="spec-v">Placeholder (e.g., Mecanum / Tank / Swerve)</span>
+              </div>
+              <div class="spec">
+                <span class="spec-k">Auto</span>
+                <span class="spec-v">Placeholder (e.g., Pathing + vision)</span>
+              </div>
+              <div class="spec">
+                <span class="spec-k">Mechanism</span>
+                <span class="spec-v">Placeholder (e.g., Intake + lift)</span>
+              </div>
+              <div class="spec">
+                <span class="spec-k">Build Notes</span>
+                <span class="spec-v">Placeholder (testing results, upgrades)</span>
+              </div>
+            </div>
+
+            <div class="callout">
+              <h3>Quick Update</h3>
+              <p class="muted">
+                Put your latest progress here (scrimmage results, improvements, awards, etc.).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Meet the Team</h2>
+          <p class="muted">Add names/roles later — these are placeholders.</p>
+        </div>
+
+          <div class="team-grid">
+            <div class="member reveal">
+            <div class="avatar">
+                <img src="assets/team/captain.webp" alt="Team Captain">
+              </div>
+                <div>
+                  <h3>Ana Lisa Vigil-Benitez</h3>
+                  <p class="muted">Team Captain • Strategy</p>
+                </div>
+            </div>
+
+          <div class="team-grid">
+            <div class="member reveal">
+            <div class="avatar">
+                <img src="assets/team/build-lead.webp" alt="Team Build Lead">
+              </div>
+                <div>
+                  <h3>Sadie Markowicz</h3>
+                  <p class="muted">Team Build Lead • Mechanical • CAD</p>
+                </div>
+            </div>
+
+          <div class="team-grid">
+            <div class="member reveal">
+            <div class="avatar">
+                <img src="docs/assets/team/programming-lead.webp" alt="Team Programming Lead">
+              </div>
+                <div>
+                  <h3>Nina Alvarez Demalde</h3>
+                  <p class="muted">Autonomous • Controls • Testing</p>
+                </div>
+            </div>
+
+          <div class="member reveal">
+            <div class="avatar placeholder"><span>Photo</span></div>
+            <div>
+              <h3>Outreach Lead</h3>
+              <p class="muted">Sponsors • Community • Media</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Gallery</h2>
+          <p class="muted">Drop photos here later — the boxes auto-fit and look clean.</p>
+        </div>
+
+        <div class="gallery">
+          <div class="media placeholder reveal"><span>Image Placeholder</span></div>
+          <div class="media placeholder reveal"><span>Image Placeholder</span></div>
+          <div class="media placeholder reveal"><span>Image Placeholder</span></div>
+          <div class="media placeholder reveal"><span>Image Placeholder</span></div>
+          <div class="media placeholder reveal"><span>Image Placeholder</span></div>
+          <div class="media placeholder reveal"><span>Image Placeholder</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSORS -->
+    <section class="section" id="sponsors">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Sponsors</h2>
+          <p class="muted">Logos can go here later. Add sponsor tiers if you want.</p>
+        </div>
+
+        <div class="sponsors">
+          <div class="sponsor placeholder reveal"><span>Sponsor Logo</span></div>
+          <div class="sponsor placeholder reveal"><span>Sponsor Logo</span></div>
+          <div class="sponsor placeholder reveal"><span>Sponsor Logo</span></div>
+          <div class="sponsor placeholder reveal"><span>Sponsor Logo</span></div>
+        </div>
+
+        <div class="sponsor-cta reveal">
+          <div class="callout">
+            <h3>Want to support Crown Joules?</h3>
+            <p class="muted">
+              Add your sponsorship pitch here (what funds help with, benefits, and contact info).
+            </p>
+            <a class="btn primary" href="#contact">Reach out</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Contact</h2>
+          <p class="muted">Replace the placeholders with your team email/socials.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="callout reveal">
+            <h3>Get in touch</h3>
+            <p class="muted">
+              Email: <span class="mono">yourteam@email.com</span><br />
+              Instagram: <span class="mono">@crownjoulesrobotics</span><br />
+              Location: <span class="mono">Your School / City</span>
+            </p>
+          </div>
+
+          <form class="form reveal" onsubmit="return false;">
+            <label>
+              <span>Name</span>
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea rows="5" placeholder="Write a message..."></textarea>
+            </label>
+            <button class="btn primary" type="button" id="fakeSendBtn">Send (placeholder)</button>
+            <p class="tiny muted" id="fakeSendText" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="muted">© <span id="year"></span> Crown Joules Robotics</p>
+      <a class="muted" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
